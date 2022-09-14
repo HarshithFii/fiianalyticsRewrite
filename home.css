@@ -1,0 +1,60 @@
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+
+.headImageWrapper img {
+  transform: scaleX(-1);
+  width: 100%;
+}
+
+.headTextContainer h1 {
+  text-transform: uppercase;
+}
+
+.bigWord {
+  font-size: 5.5vw;
+  letter-spacing: 0.2ch;
+}
+
+.headingContainer {
+  background: url("./low-poly-grid-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--primary-color-2);
+}
+
+.solutionContainer {
+  background-color: var(--primary-color-1);
+}
+
+.solutionCards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin-inline: auto;
+  border: 1px solid white;
+  border-radius: 1rem;
+}
+
+.solutionContainer {
+  text-align: center;
+}
+.solutionCard {
+  width: 40%;
+  margin: 1rem;
+  /* border: 1px solid white; */
+}
+
+.solutionCard img {
+  width: 100%;
+}
+
+.solutionCard h1 {
+  font-size: max(2vw, 1rem);
+}

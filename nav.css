@@ -1,0 +1,83 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer object {
+  width: 6rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+}
+
+.nav__items {
+  margin: 2rem;
+}
+
+.nav__items a {
+  color: var(--primary-color-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 1rem;
+  letter-spacing: 0.2ch;
+}
+
+.nav__items a:hover {
+  background-color: var(--primary-color-1);
+  color: var(--primary-color-2);
+  border-radius: 2px;
+}
+
+/* Small Screens */
+@media (max-width: 700px) {
+  .navItems {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background-color: var(--primary-color-2);
+  }
+  .navList {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hambugerMenu {
+    display: unset;
+    margin-right: 1rem;
+  }
+  .nav__items a {
+    font-size: 0.75rem;
+    margin: 0.1rem;
+  }
+  .nav__items {
+    margin: clamp(0.7rem, 0.7rem, 1.5rem);
+  }
+  .logoContainer {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color-2);
+  }
+  .logoWrapper {
+    /* outline: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .logoContainer object {
+    position: fixed;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 2vh;
+    box-shadow: 0px 5px 5px #c0c0c0;
+  }
+}
