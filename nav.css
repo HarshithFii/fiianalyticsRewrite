@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #f5f5f5;
 }
 
 .logoContainer object {
@@ -11,6 +16,7 @@
 .navList {
   display: flex;
   list-style: none;
+  position: relative;
 }
 
 .nav__items {
@@ -34,6 +40,9 @@
 
 /* Small Screens */
 @media (max-width: 700px) {
+  .nav {
+    height: 0;
+  }
   .navItems {
     position: fixed;
     width: 100vw;
@@ -81,3 +90,4 @@
     box-shadow: 0px 5px 5px #c0c0c0;
   }
 }
+
