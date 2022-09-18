@@ -1,60 +1,109 @@
-.headingContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-repeat: no-repeat;
-  background-position: 0;
-}
-
-.headImageWrapper img {
-  transform: scaleX(-1);
-  width: 100%;
-}
-
-.headTextContainer h1 {
-  text-transform: uppercase;
-}
-
-.bigWord {
-  font-size: 5.5vw;
-  letter-spacing: 0.2ch;
-}
-
-.headingContainer {
-  background: url("./low-poly-grid-haikei.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: var(--primary-color-2);
-}
-
-.solutionContainer {
+.content {
+  margin-top: var(--nav-size);
   background-color: var(--primary-color-1);
+  color: #fff;
 }
 
-.solutionCards {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 90vw;
-  margin-inline: auto;
-  border: 1px solid white;
-  border-radius: 1rem;
+.page {
+  height: calc(100vh - var(--nav-size));
+  padding-inline: 10vw;
 }
 
-.solutionContainer {
+.big-text {
+  font-size: max(2rem, 4vw);
+}
+
+.small-text {
+  font-size: max(1rem, 2vw);
+}
+
+.green-text {
+  color: var(--primary-color-2);
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  font-size: max(1rem, 1vw);
+  background-color: var(--primary-color-2);
+  padding: 0.7rem;
+  padding-inline: 1rem;
+  letter-spacing: 0.2ch;
+  border-radius: 4px;
+}
+
+.row {
   text-align: center;
 }
-.solutionCard {
-  width: 40%;
-  margin: 1rem;
-  /* border: 1px solid white; */
+
+/* Page1 */
+.page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.solutionCard img {
-  width: 100%;
+.row1 {
+  margin-bottom: 2vh;
 }
 
-.solutionCard h1 {
-  font-size: max(2vw, 1rem);
+.row3 {
+  margin-top: 8vh;
+}
+
+/* Page2 */
+.page2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: max(10px, 1vw);
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  width: max(100%, 12rem);
+}
+
+.taglineContainer object {
+  height: max(50%, 8rem);
+  padding-inline: 8vw;
+  margin: auto;
+}
+
+/* Page3 */
+.page3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page3 .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10vh; */
+}
+
+.page3 .row a {
+  margin-top: 100px;
+}
+
+@media (max-width: 700px) {
+  .content {
+    margin-top: 7vh;
+    padding-top: 7vh;
+  }
+  .page2 {
+    flex-direction: column;
+  }
+  .imageWrapper img {
+    width: 50%;
+  }
 }
