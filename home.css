@@ -9,29 +9,6 @@
   padding-inline: 10vw;
 }
 
-.big-text {
-  font-size: max(2rem, 4vw);
-}
-
-.small-text {
-  font-size: max(1rem, 2vw);
-}
-
-.green-text {
-  color: var(--primary-color-2);
-}
-
-.button {
-  text-decoration: none;
-  color: #fff;
-  font-size: max(1rem, 1vw);
-  background-color: var(--primary-color-2);
-  padding: 0.7rem;
-  padding-inline: 1rem;
-  letter-spacing: 0.2ch;
-  border-radius: 4px;
-}
-
 .row {
   text-align: center;
 }
@@ -70,7 +47,7 @@
   width: max(100%, 12rem);
 }
 
-.taglineContainer object {
+.taglineContainer img {
   height: max(50%, 8rem);
   padding-inline: 8vw;
   margin: auto;
@@ -98,7 +75,6 @@
 @media (max-width: 700px) {
   .content {
     margin-top: 7vh;
-    padding-top: 7vh;
   }
   .page2 {
     flex-direction: column;

@@ -4,13 +4,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 0.1ch;
+  /* outline: 2px solid green; */
 }
 
 :root {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  --nav-size: 100px;
   --primary-color-1: #1c3f72;
   --primary-color-2: #359c47;
+}
+
+.big-text {
+  font-size: max(2rem, 4vw);
+}
+
+.small-text {
+  font-size: max(1rem, 2vw);
+}
+
+.green-text {
+  color: var(--primary-color-2);
+}
+
+.blue-text {
+  color: var(--primary-color-1);
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  font-size: max(1rem, 1vw);
+  background-color: var(--primary-color-2);
+  padding: 0.7rem;
+  padding-inline: 1rem;
+  letter-spacing: 0.2ch;
+  border-radius: 4px;
 }
 
 @media (max-width: 700px) {

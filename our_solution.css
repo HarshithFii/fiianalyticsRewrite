@@ -1,0 +1,44 @@
+.content {
+  margin-top: var(--nav-size);
+  background-color: var(--primary-color-2);
+  color: #fff;
+}
+
+.page {
+  height: calc(100vh - var(--nav-size));
+  padding-inline: 10vw;
+  text-align: center;
+  padding: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .content {
+    margin-top: 7vh;
+  }
+  .column-flex {
+    flex-direction: column;
+  }
+  .diagImageWrapper img {
+    width: 70%;
+  }
+  .navItems {
+    background-color: var(--primary-color-1);
+  }
+  .navItems a {
+    color: var(--primary-color-2);
+  }
+  .logoContainer {
+    background-color: var(--primary-color-1);
+  }
+  .nav__items .active {
+    background-color: var(--primary-color-2);
+    color: var(--primary-color-1);
+  }
+}
