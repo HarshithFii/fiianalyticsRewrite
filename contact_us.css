@@ -22,8 +22,10 @@
 }
 
 .line .iconWrapper {
-  width: 9vh;
-  height: 9vh;
+  width: max(9vh, 70px);
+  height: max(9vh, 70px);
+  /* width: 70px;
+  height: 70px; */
   background-color: var(--primary-color-2);
   padding: 20px;
   display: flex;
@@ -33,12 +35,12 @@
 }
 
 .line .iconWrapper img {
-  width: 100%;
+  width: 130%;
 }
 
 .contactWrapper {
   height: 70vh;
-  width: max(50vw, 400px);
+  width: max(50vw, 300px);
 }
 
 .lineContent {
@@ -54,4 +56,8 @@
   .content {
     margin-top: 7vh;
   }
+  /* .navList .activeWrapper {
+    background-color: var(--primary-color-2);
+    display: none;
+  } */
 }
